@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<servicelist>
+<service>
+	<name>utility</name>
+	<module>UTIL</module>
+	<symbol>L</symbol>
+	<description>Utility</description>
+</service>
+<service>
+	<name>serviceapi</name>
+	<module>PSB</module>
+	<symbol>B</symbol>
+	<description> Tag, Asset, Zone, Publish/Subscribe, Storage, LogTrace </description>
+</service>
+<service>
+	<name>usersapi</name>
+	<module>USER</module>
+	<symbol>U</symbol>
+	<description>Users</description>
+</service>
+<service>
+	<name>snsapi</name>
+	<module>SNS</module>
+	<symbol>S</symbol>
+</service>
+<service>
+	<name>calendarapi</name>
+	<module>CAL</module>
+	<symbol>C</symbol>
+</service>
+<service>
+	<name>photosapi</name>
+	<module>PHOTO</module>
+	<symbol>P</symbol>
+	<description>API using Twitpic and panoramio</description>
+</service>
+<service>
+	<name>musicapi</name>
+	<module>MUSIC</module>
+	<symbol>M</symbol>
+	<description>API using Lastfm</description>
+</service>
+<service>
+	<name>ttsapi</name>
+	<module>TTS</module>
+	<symbol>T</symbol>
+	<description>Text To Sound</description>
+</service>
+<service>
+	<name>eventapi</name>
+	<module>EVENT</module>
+	<symbol>E</symbol>
+</service>
+<service>
+	<name>yelpapi</name>
+	<module>YELP</module>
+	<symbol>Y</symbol>
+</service>
+<service>
+	<name>gpsapi</name>
+	<module>GPS</module>
+	<symbol>G</symbol>
+</service>
+<service>
+	<name>poiapi</name>
+	<module>POI</module>
+	<symbol>O</symbol>
+</service>
+<service>
+	<name>imsapi</name>
+	<module>IMS</module>
+	<symbol>I</symbol>
+</service>
+<service>
+	<name>nlpapi</name>
+	<module>NLP</module>
+	<symbol>N</symbol>
+</service>
+<service>
+        <name>demoapi</name>
+        <module>DEMO</module>
+        <symbol>D</symbol>
+</service>
+
+</servicelist>

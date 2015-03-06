@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="file://./user_config.xsd">
+    <user>
+        <xmpp>
+                <username>myppp@jabber.org</username>
+                <password>password</password>
+                <resource>CLNT</resource>
+        </xmpp>
+        <xmlrpc>
+                <nameserver>Howard:Demo</nameserver>
+                <port>8089</port>
+        </xmlrpc>
+    </user>
+</config>

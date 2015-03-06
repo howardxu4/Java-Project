@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<library name="libdemoapi.so" version="1.0" xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="file://./module.xsd">
+<class name="DEMOAPI">
+        <method name="Get_SUM">
+                <format>%d,%d</format>
+                <param attr="one">first</param>
+                <param attr="two">second</param>
+                <return attr="0 - fails, otherwise result of sum">int</return>
+                <description>calculate of adding </description>
+        </method>
+	<method name="Get_Echo">
+                <format>%s</format>
+                <param attr="any string">STR</param>
+                <return attr="echo of string">char*</return>
+                <description>get echo string from inpuy string </description>
+        </method>
+</class>
+</library>
+

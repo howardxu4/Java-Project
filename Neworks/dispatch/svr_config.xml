@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config>
+	<server>
+		<userconf>user_config.xml</userconf>
+		<servicelist>services/servicelist.xml</servicelist>
+		<useservices>BU</useservices>
+		<debug>debug.xml</debug>
+		<start_init></start_init>
+	</server>
+	<database>
+		<user_service>
+			<user_dbname>/tmp/Users_06.db</user_dbname>
+			<user_initdata>users.xml</user_initdata>
+		</user_service>
+		<photo_service>
+			<photo_dbname>/tmp/Photos_06.db</photo_dbname>
+			<photo_location>/tmp</photo_location>
+		</photo_service>
+		<music_service>
+			<music_dbname>/tmp/Music_06.db</music_dbname>
+			<music_location>/tmp</music_location>
+		</music_service>
+	</database>
+</config>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config>
+	<server>
+		<userconf>user_config.xml</userconf>
+		<servicelist>services/servicelist.xml</servicelist>
+		<useservices>BU</useservices>
+		<debug>debug.xml</debug>
+		<start_init></start_init>
+	</server>
+	<database>
+		<ps_service>
+			<ps_dbname>/tmp/PS_06.db</ps_dbname>
+			<ps_location>/tmp</ps_location>
+			<ps_initdata>taglist.xml</ps_initdata>
+		</ps_service>
+		<user_service>
+			<user_dbname>/tmp/Users_06.db</user_dbname>
+			<user_initdata>users.xml</user_initdata>
+		</user_service>
+		<sns_service>
+			<sns_dbname>/tmp/SNS_06.db</sns_dbname>
+		</sns_service>
+		<calendar_service>
+			<calendar_dbname>/tmp/Calendar_06.db</calendar_dbname>
+		</calendar_service>
+		<photo_service>
+			<photo_dbname>/tmp/Photos_06.db</photo_dbname>
+			<photo_location>/tmp</photo_location>
+		</photo_service>
+		<music_service>
+			<music_dbname>/tmp/Music_06.db</music_dbname>
+			<music_location>/tmp</music_location>
+		</music_service>
+		<event_service>
+			<event_dbname>/tmp/Events_06.db</event_dbname>
+		</event_service>
+		<yelp_service>
+			<yelp_dbname>/tmp/Yelp_06.db</yelp_dbname>
+		</yelp_service>
+		<gps_service>
+			<gps_dbname>/tmp/GPS_06.db</gps_dbname>
+		</gps_service>
+		<poi_service>
+			<poi_dbname>/tmp/POI_06.db</poi_dbname>
+		</poi_service>
+	</database>
+</config>

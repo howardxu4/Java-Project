@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<library name="libusersapi.so" version="1.0">
+<class name="USER">
+        <method name="USER_ID_Get">
+                <format>%d</format>
+                <param attr="user session ID">USID</param>
+                <return attr="0 - fails, otherwise user id">int</return>
+                <description>get user id from session id </description>
+        </method>
+	<method name="USER_Name_Get">
+                <format>%d</format>
+                <param attr="user session ID">USID</param>
+                <return attr="name of user login">char*</return>
+                <description>get user name from session id </description>
+        </method>
+        <method name="USER_Check">
+                <format>%s</format>
+                <param attr="user name">Name</param>
+                <return attr="0 - name available, otherwisw  be used">int</return>
+                <description>check user name availability</description>
+        </method>
+	<method name="USER_Add">
+		<format>%s,%s,%d</format>
+		<param attr="user name">Name</param>
+		<param attr="password">Password</param>
+		<param attr="user type">Type</param>
+		<return attr="0 - succeed, otherwise fails">int</return>
+		<description>add user account </description>
+	</method>
+	<method name="USER_Del">
+		<format>%d</format>
+		<param attr="the user session id">UserID</param>
+		<return attr="0 succeed, otherwise fails">int</return>
+		<description>delete user account by userid
+		</description>
+	</method>
+	<method name="USER_Login">
+		<format>%s,%s,%s</format>
+		<param attr="user name">Name</param>
+		<param attr="user password">Password</param>
+		<param attr="unique IP">UIP</param>
+		<return attr="0 - fails, otherwise USID">int</return>
+		<description>user login method by input name and password
+		</description>
+	</method>
+        <method name="USER_Tag_Login">
+                <format>%d,%s</format>
+                <param attr="user tag ID">Tag</param>
+                <param attr="unique IP">UIP</param>
+                <return attr="0 - fails, otherwise USID">int</return>
+                <description>user login method by input tagid
+                </description>
+	</method>
+       	<method name="USER_Logout">
+                <format>%d</format>
+                <param attr="the user session id">USID</param>
+                <return attr="0 - secceed, otherwise fails">int</return>
+                <description>user logout method</description>
+        </method>
+        <method name="USER_Change">
+                <format>%d,%s</format>
+                <param attr="the user session id">UserID</param>
+                <param attr="new password">Password</param>
+                <return attr="0 success, otherwise fails">int</return>
+                <description>change user password method</description>
+        </method>
+        <method name="USER_Tag_Set">
+                <format>%d,%d</format>
+                <param attr="the user session id">UserID</param>
+                <param attr="user tag id">Tag</param>
+                <return attr="0 success, otherwise fails">int</return>
+                <description>change user tag method</description>
+        </method>
+	<method name="USER_Info_Set">
+		<format>%d,%s</format>
+		<param attr="the user session id">userID</param>
+		<param attr="user info">Info</param>
+		<param attr="service name">Service</param>
+		<return attr="0 success otherwise fail">int</return>
+		<description>set user info by userid</description>
+	</method>
+        <method name="USER_Info_Get">
+                <format>%d</format>
+                <param attr="the user session id">USID</param>
+		<param attr="service name, if NULL for all service's name">Service</param>
+                <return attr="user info [ user's info list ]">char*</return>
+                <description>get user info by userid</description>
+        </method>
+        <method name="USER_ID_Open">
+                <format>%s</format>
+                <param attr="open ID">OpenID</param>
+                <return attr="positive - UserID; negative - fails">int</return>
+                <description>get user id from openid</description>
+        </method>
+        <method name="USER_OpenID_Get">
+                <format>%d</format>
+		<param attr="the user session id">USID</param>
+                <return attr="OpenID list">char*</return>
+                <description>get openid list by userid</description>
+        </method>
+        <method name="USER_OpenID_Add">
+                <format>%d,%s</format>
+		<param attr="the user session id">USID</param>
+		<param attr="openID">openID</param>
+                <return attr="0 succeed, otherwise fails">int</return>
+                <description>add open id method</description>
+        </method>
+        <method name="USER_OpenID_Del">
+                <format>%d,%s</format>
+		<param attr="the user session id">userID</param>
+		<param attr="openID">openID</param>
+                <return attr="0 secceed, otherwise fails">int</return>
+                <description>delete open id method</description>
+        </method>
+        <method name="USER_Rel_Add">
+                <format>%d,%s,%d</format>
+                <param attr="the user session id">USID</param>
+                <param attr="relation user name">relName</param>
+		<param attr="relation type">type</param>
+                <return attr="0 secceed, otherwise fails">int</return>
+                <description>add relation method</description>
+        </method>
+        <method name="USER_Rel_Del">
+                <format>%d,%s</format>
+                <param attr="the user session id">USID</param>
+                <param attr="relation user name">RelName</param>
+                <return attr="0 secceed, otherwise fails">int</return>
+                <description>delete relation method</description>
+        </method>
+	<method name="USER_Rel_Check">
+		<format>%d,%s</format>
+		<param attr="the user session id">USID</param>
+		<param attr="relation Name">RelName</param>
+		<return attr="Relation Type">int</return>
+		<description>get relation type method</description>
+	</method>
+        <method name="USER_Rel_Get">
+                <format>%d,%d</format>
+                <param attr="the user session id">userID</param>
+                <param attr="Relation Type">type</param>
+                <return attr="Relation user name list">char*</return>
+                <description>get relation user id list method</description>
+        </method>
+</class>
+</library>
+
