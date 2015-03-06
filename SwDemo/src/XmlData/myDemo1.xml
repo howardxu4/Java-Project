@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="myDemo1">
+	<Panel>
+	<Layout Type="Border">
+	<Dimension Size="Preferred">
+		<Height>500</Height>
+		<Width>600</Width>
+	</Dimension>
+	<Panel Position="North">
+	<Layout Type="Border">
+    <MenuBar Position="North">
+		<Menu>
+			<Name>file</Name>
+			<Text>Files</Text>
+			<MenuItem>
+				<Name>About</Name>
+				<Text>About...</Text>
+				<UserDef>USER01</UserDef>
+			</MenuItem>
+			<MenuItem>
+				<Text>Company</Text>
+				<UserDef>USER01</UserDef>
+			</MenuItem>
+			<Separator></Separator>
+			<MenuItem>
+				<Text>Exit</Text>
+				<UserDef Action="_SYSTEM">System
+					<Object>_SWUTIL</Object>
+					<Method>exit</Method>
+					<parType>_int</parType>
+					<parValue>0</parValue>
+				</UserDef>
+			</MenuItem>
+		</Menu>
+		<Menu>
+			<Text>Options</Text>
+			<RadioButtonMenuItem>
+				<Text>Metal Style</Text>
+				<Selected/>
+				<UserDef Action="_SYSTEM">System
+					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<parType>_int</parType>
+					<parValue>0</parValue>
+				</UserDef>
+			</RadioButtonMenuItem>
+			<RadioButtonMenuItem>
+				<Text>Motif Style</Text>
+				<UserDef Action="_SYSTEM">System
+					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<parType>_int</parType>
+					<parValue>1</parValue>
+				</UserDef>
+			</RadioButtonMenuItem>
+			<RadioButtonMenuItem>
+				<Text>Windows Style</Text>
+				<UserDef Action="_SYSTEM">System
+					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<parType>_int</parType>
+					<parValue>2</parValue>
+				</UserDef>
+			</RadioButtonMenuItem>
+			<Separator/>
+			<CheckBoxMenuItem>
+				<Text>Show Tooltip</Text>
+				<Selected/>
+				<UserDef Action="_SYSTEM">System
+					<Object>_SWUTIL</Object>
+					<Method>swichToolTip</Method>
+					<parType>_boolean</parType>
+					<parValue>_value</parValue>
+				</UserDef>
+			</CheckBoxMenuItem>
+		</Menu>
+    </MenuBar>
+	<ToolBar Position="Center">
+		<ToolBarButton>
+			<Name>SwSplitPane</Name>
+			<Icon>resources/images/toolbar/JSplitPane.gif</Icon>
+			<UserDef>USER01</UserDef>
+            <ToolTipText>SplitPane demo</ToolTipText>
+		</ToolBarButton>
+		<ToolBarButton>
+			<Name>SwComboBox</Name>
+			<Icon>resources/images/toolbar/JComboBox.gif</Icon>
+			<UserDef>USER01</UserDef>
+            <ToolTipText>ComboBox demo</ToolTipText>
+		</ToolBarButton>
+		<ToolBarButton>
+			<Name>SwTabbedPane</Name>
+			<Icon>resources/images/toolbar/JTabbedPane.gif</Icon>
+			<UserDef>USER01</UserDef>
+            <ToolTipText>TabbedPane demo</ToolTipText>
+		</ToolBarButton>
+		<Separator/>
+		<ToolBarButton>
+			<Name>SwTryPane</Name>
+			<Icon>resources/images/toolbar/JEditorPane.gif</Icon>
+			<UserDef>USER01</UserDef>
+            <ToolTipText>TextPane demo</ToolTipText>
+		</ToolBarButton>
+	</ToolBar>
+	</Layout>
+	</Panel>
+	<Panel Position="Center">
+		<Dimension Size="Preferred">
+			<Height>400</Height>
+			<Width>600</Width>
+		</Dimension>
+		<Layout Type="Border">
+		<TabbedPane Position="Center">
+			<SaveId>TabbedPane</SaveId>
+			<Name>TabControl</Name>
+			<UserDef>USER01</UserDef>
+			<Tab>Demo
+				<Panel XmlFile="XmlData/mySplitPaneDemo.xml"></Panel>
+			</Tab>
+			<Tab>Source
+			<Panel>
+				<Layout Type="Border">
+				<ScrollPane Position="Center">
+					<Dimension Size="Preferred">
+						<Height>300</Height>
+						<Width>400</Width>
+					</Dimension>
+					<EditorPane>
+						<SaveId>MySource</SaveId>
+						<Page>Resources/XmlData/mySplitPaneDemo.java</Page>
+						<Name>java</Name>
+						<Editable>No</Editable>
+					</EditorPane>
+				</ScrollPane>
+				</Layout>
+			</Panel>
+			</Tab>
+			<Tab>Data
+			<Panel>
+				<Layout Type="Border">
+				<ScrollPane Position="Center">
+					<Dimension Size="Preferred">
+						<Height>300</Height>
+						<Width>400</Width>
+					</Dimension>
+					<EditorPane>
+						<SaveId>MyData</SaveId>
+						<Page>XmlData/mySplitPaneDemo.xml</Page>
+						<Name>data</Name>
+						<Editable>No</Editable>
+					</EditorPane>
+				</ScrollPane>
+				</Layout>
+			</Panel>
+			</Tab>
+		</TabbedPane>
+		</Layout>
+    </Panel>
+    </Layout>
+ 	</Panel>	
+</UIConfig>

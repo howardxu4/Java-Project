@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>	<Panel>
+		<Layout Type="Border"></Layout>
+		<Panel Position="Center">			<Border Type="Lowered"></Border>
+			<Layout Type="Border"></Layout>
+			<Panel Position="North">
+				<Border Title="Text Buttons"></Border>				<PasswordField>
+					<Name>pswd</Name>					<Columns>10</Columns>
+					<UserDef Action="Key">USER01</UserDef>				</PasswordField>
+				<ScrollPane>				<TextArea>
+					<Name>writable</Name>					<Columns>10</Columns>					<Rows>8</Rows>
+					<UserDef>USER01</UserDef>				</TextArea>
+				</ScrollPane>				<Button>					<Text>One</Text>		 				</Button>				<ToggleButton>					<Text>Two</Text>				</ToggleButton>				<Button>					<Text>Three</Text> 				</Button>
+ 				<ComboBox> 					<Name>ComboTest</Name>
+					<Item>aaaa</Item>					<Item>bbbb</Item>					<Item>cccc</Item>					<Item>dddd</Item>					<Item>eeee</Item>					<Item>ffff</Item>					<Item>gggg</Item>
+				</ComboBox>
+				<ScrollPane> 				<List>
+ 					<Name>ListTest</Name>
+						<Item>Robert</Item>						<Item>James</Item>						<Item>Nilson</Item>						<Item>Austin</Item>						<Item>San Jose</Item>						<Item>Fremont</Item>						<Item>CA</Item>						<Item>TX</Item>						<Item>OR</Item>						<Item>FL</Item>						<Item>AK</Item>						<Item>WA</Item>						<Item>DC</Item>						<Item>VG</Item>						<Item>NY</Item>						<Item>UT</Item>						<Item>AR</Item>					</List>				</ScrollPane>
+			</Panel>			<Panel Position="Center">
+				<Border Title="Image Buttons"></Border>
+				<Button>					<Name>Test1</Name>					<Icon>Resources/images/buttons/b1.gif</Icon>					<PressedIcon>Resources/images/buttons/b1p.gif</PressedIcon>
+					<RolloverIcon>Resources/images/buttons/b1r.gif</RolloverIcon>
+					<DisabledIcon>Resources/images/buttons/b1d.gif</DisabledIcon>
+					<Margin></Margin> 				</Button>				<ToggleButton>					<Name>Test2</Name>					<Icon>Resources/images/buttons/b2.gif</Icon>					<PressedIcon>Resources/images/buttons/b2p.gif</PressedIcon>
+					<RolloverIcon>Resources/images/buttons/b2r.gif</RolloverIcon>
+					<DisabledIcon>Resources/images/buttons/b2d.gif</DisabledIcon>
+					<Margin></Margin> 				</ToggleButton>
+ 				<Button>					<Name>Test3</Name>					<Icon>Resources/images/buttons/b3.gif</Icon>					<PressedIcon>Resources/images/buttons/b3p.gif</PressedIcon>
+					<RolloverIcon>Resources/images/buttons/b3r.gif</RolloverIcon>
+					<DisabledIcon>Resources/images/buttons/b3d.gif</DisabledIcon>
+					<Margin></Margin> 				</Button> 				<Slider>
+ 					<Name>slid</Name>
+ 					<Maximum>200</Maximum>
+ 					<Minimum>0</Minimum>
+ 					<Value>100</Value> 					<Orientation>Vertical</Orientation>
+ 					<PaintTicks>yes</PaintTicks> 					<MinorTickSpacing>10</MinorTickSpacing>
+ 					<MajorTickSpacing>50</MajorTickSpacing>					<UserDef>USER01</UserDef> 				</Slider> 				<ProgressBar> 					<SaveId>PrgBar</SaveId>
+  					<Name>progress</Name>
+ 					<Maximum>200</Maximum>
+ 					<Minimum>0</Minimum>
+					<Value>100</Value>
+					<String>%50</String>
+					<StringPainted>yes</StringPainted> 				</ProgressBar> 				<ScrollBar> 					<SaveId>ScrlBar</SaveId>
+  					<Name>ScrlBar</Name>
+ 					<Maximum>200</Maximum>
+ 					<Minimum>0</Minimum>
+					<Value>100</Value>					<Orientation>Horizontal</Orientation>
+ 				</ScrollBar> 				<Spiner>
+ 					<Name>spiner</Name>
+ 					<Dimension>
+ 						<Height>30</Height>
+ 						<Width>40</Width> 					</Dimension>
+ 				</Spiner>
+			</Panel>
+ 		</Panel> 	</Panel></UIConfig>

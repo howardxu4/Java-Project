@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="mySplitPaneDemo">
+   <Panel>
+      <Border Type="Etched"></Border>
+      <Name>SplitPaneDemo</Name>
+      <SaveId>mySplitPaneDemo</SaveId>
+      <Dimension Size="Preferred">
+         <Width>650</Width>
+         <Height>540</Height>
+      </Dimension>
+      <LayOut Type="Border">
+      <SplitPane Position="Center">
+         <SaveId>SplitPane</SaveId>
+         <ContinuousLayout>true</ContinuousLayout>
+         <OneTouchExpandable></OneTouchExpandable>
+         <DividerLocation>200</DividerLocation>
+         <RightComponent>
+            <Label>
+               <SaveId>moon</SaveId>
+               <Icon>resources/images/splitpane/moon.jpg</Icon>
+               <Dimension Size="Minimum">
+                   <Height>20</Height>
+                   <Width>20</Width>
+               </Dimension>
+            </Label>
+         </RightComponent>
+         <LeftComponent>
+            <Label>
+               <SaveId>earth</SaveId>
+               <Icon>resources/images/splitpane/earth.jpg</Icon>
+               <Dimension Size="Minimum">
+                  <Height>20</Height>
+                  <Width>20</Width>
+               </Dimension>
+            </Label>
+         </LeftComponent>
+      </SplitPane>
+      <Panel Position="South">
+         <Layout Type="Grid" Col="1">
+         <Panel>
+            <Layout Type="Box.X_AXIS">
+            <RadioButton>
+               <Name>VerticalSplit</Name>
+               <Text>Verticaly Split</Text>
+               <UserDef Action="_SYSTEM">System
+                  <Object>SplitPane</Object>
+                  <Method>setOrientation</Method>
+                  <parType>_int</parType>
+                  <parValue>0</parValue>
+               </UserDef>
+            </RadioButton>
+            <RadioButton>
+               <Name>HorizontalSplit</Name>
+               <Text>Horizontaly Split</Text>
+               <Selected></Selected>
+               <UserDef Action="_SYSTEM">System
+                  <Object>SplitPane</Object>
+                  <Method>setOrientation</Method>
+                  <parType>_int</parType>
+                  <parValue>1</parValue>
+               </UserDef>
+            </RadioButton>
+            <CheckBox>
+               <Name>Continuous</Name>
+               <Text>Continuous Layout</Text>
+               <Selected></Selected>
+               <UserDef Action="_SYSTEM">System
+                  <Object>SplitPane</Object>
+                  <Method>setContinuousLayout</Method>
+                  <parType>_boolean</parType>
+                  <parValue>_value</parValue>
+               </UserDef>
+            </CheckBox>
+            <CheckBox>
+               <Name>OneTouch</Name>
+               <Text>One-Touch Expandable</Text>
+               <Selected></Selected>
+               <UserDef Action="_SYSTEM">System
+                  <Object>SplitPane</Object>
+                  <Method>setOneTouchExpandable</Method>
+                  <parType>_boolean</parType>
+                  <parValue>_value</parValue>
+               </UserDef>
+            </CheckBox>
+            </Layout>
+         </Panel>
+         <Panel>
+            <Layout Type="Flow.LEFT">
+            <Label>
+               <Text>Divider Size</Text>
+            </Label>
+            <TextField>
+               <Name>DividerSize</Name>
+               <Text>10</Text>
+               <Columns>5</Columns>
+               <UserDef>USER02</UserDef>
+            </TextField>
+            </Layout>
+         </Panel>
+         <Panel>
+            <Layout Type="Flow.LEFT">
+            <Label>
+               <Text>First Component's Minimum Size</Text>
+            </Label>
+            <TextField>
+               <Name>FirstMinimumSize</Name>
+               <Text>20</Text>
+               <Columns>5</Columns>
+               <UserDef>USER02</UserDef>
+            </TextField>
+            </Layout>
+         </Panel>
+         <Panel>
+            <Layout Type="Flow.LEFT">
+            <Label>
+               <Text>Second Component's Minimum Size</Text>
+            </Label>
+            <TextField>
+               <Text>20</Text>
+               <Name>SecondMinimumSize</Name>
+               <Columns>5</Columns>
+               <UserDef>USER02</UserDef>
+            </TextField>
+            </Layout>
+         </Panel>
+         </Layout>
+      </Panel>
+      </LayOut>
+   </Panel>
+</UIConfig>

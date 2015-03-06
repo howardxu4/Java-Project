@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<Panel>	<Layout Type="BorderLaout">
+	<Box Position="North" Style="Horizontal">
+		<Label>
+			<Text>Alignment:</Text>			<Alignment>Center</Alignment>
+		</Label>		<Box Style="HorizontalStrut"><Size>10</Size></Box>
+		<ButtonGroup Name="all"></ButtonGroup>		<RadioButton>
+			<Name></Name>			<Text>(default)</Text>
+			<Dimension>				<Height>20</Height>				<Width>80</Width>
+			</Dimension>			<UserDef Action="myPop">SYSTEM</UserDef>		</RadioButton>	</Box>
+	<Panel Position="Center">		<Name>Box Demo</Name>
+		<Border Type="Etched"/>		<Layout Type="BoxLayout.Y_AXIS">
+		<Panel>			<Layout Type="BoxLayout.Y_AXIS">
+			<Box Style="Horizontal">				<ButtonGroup Name="all"></ButtonGroup>				<RadioButton>
+				<Margin></Margin>
+				<Name>TopLeft</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/tl.gif</Icon>		        <SelectedIcon>resources/images/buttons/tldn.gif</SelectedIcon>
+				</RadioButton>				<RadioButton>				<Margin></Margin>
+				<Name>Top</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/tm.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/tmdn.gif</SelectedIcon>
+				</RadioButton>				<RadioButton>				<Margin></Margin>				<Name>TopRight</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/tr.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/trdn.gif</SelectedIcon>				</RadioButton>
+			</Box>
+			<Box Style="Horizontal">
+				<ButtonGroup Name="all"></ButtonGroup>				<RadioButton>				<Margin></Margin>				<Name>Left</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/ml.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/mldn.gif</SelectedIcon>
+				</RadioButton>				<RadioButton>				<Margin></Margin>				<Name>Center</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/c.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/cdn.gif</SelectedIcon>
+				</RadioButton>				<RadioButton>				<Margin></Margin>				<Name>Right</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/mr.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/mrdn.gif</SelectedIcon>
+				</RadioButton>
+			</Box>
+			<Box Style="Horizontal">
+				<ButtonGroup Name="all"></ButtonGroup>				<RadioButton>				<Margin></Margin>				<Name>DownLeft</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/bl.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/bldn.gif</SelectedIcon>
+				</RadioButton>				<RadioButton>				<Margin></Margin>				<Name>Down</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/bm.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/bmdn.gif</SelectedIcon>
+				</RadioButton>				<RadioButton>				<Margin></Margin>				<Name>DownRight</Name>				<UserDef Action="myPop">SYSTEM</UserDef>				<Icon>resources/images/buttons/br.gif</Icon>
+		        <SelectedIcon>resources/images/buttons/brdn.gif</SelectedIcon>
+				</RadioButton>
+			</Box>			</Layout>
+		</Panel>		</Layout> 	</Panel>
+ 	</Layout>
+ 	</Panel>	</UIConfig>

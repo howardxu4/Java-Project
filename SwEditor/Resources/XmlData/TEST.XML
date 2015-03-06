@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="ObjMgr.ObjDemo">	<Frame>
+		<Title>Test Today</Title>		<Dimension>
+			<Width>850</Width>			<Height>580</Height>
+		</Dimension>		<MenuBar XmlFile="menubar.xml"></MenuBar>		<ToolBar>
+			<SaveId>myTB</SaveId>
+			<ToolBarButton>1			<Button>
+				<Name>Hi</Name>
+				<Icon>find.gif</Icon>
+				<UserDef>USER01</UserDef>			</Button>
+			</ToolBarButton>			<ToolBarButton>2
+			<Button>
+				<Name>Bye</Name>
+				<Icon>gificon.gif</Icon>
+				<UserDef>USER01</UserDef>			</Button>
+			</ToolBarButton>		</ToolBar>		<Panel XmlFile="MainPanel.xml"></Panel>
+    </Frame></UIConfig>

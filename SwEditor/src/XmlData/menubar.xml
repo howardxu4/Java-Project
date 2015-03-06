@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+    <MenuBar>
+		<Menu>
+			<Name>file</Name>			<Text>Files</Text>
+			<MenuItem>				<Text>About...</Text>
+			</MenuItem>			<MenuItem>
+				<Text>Company</Text>
+				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>generateCode</Method>
+					<ParType></ParType>
+					<ParValue></ParValue>				</UserDef>
+			</MenuItem>			<MenuItem>
+				<Name>Support</Name>				<Text>&lt;html&gt;&lt;font color=red&gt;Support&lt;/html&gt; </Text>				<UserDef Action="_SYSTEM">System					<Object>myHandle</Object>
+					<Method>doThis</Method>
+					<ParType></ParType>
+					<ParValue></ParValue>				</UserDef>
+			</MenuItem>
+			<Separator></Separator>			<MenuItem>				<Text>Exit</Text>
+				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>exit</Method>
+					<ParType>_int</ParType>
+					<ParValue>0</ParValue>				</UserDef>
+			</MenuItem>
+		</Menu>		<Menu>			<Text>Modes</Text>
+			<RadioButtonMenuItem>
+				<Text>Metal</Text>
+				<Selected>true</Selected>				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<ParType>_int</ParType>
+					<ParValue>0</ParValue>				</UserDef>
+			</RadioButtonMenuItem>			<RadioButtonMenuItem>
+				<Text>Windows</Text>				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<ParType>_int</ParType>
+					<ParValue>2</ParValue>				</UserDef>
+			</RadioButtonMenuItem>			<RadioButtonMenuItem>
+				<Text>Macintosh</Text>				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<ParType>_int</ParType>
+					<ParValue>3</ParValue>				</UserDef>
+			</RadioButtonMenuItem>			<RadioButtonMenuItem>
+				<Text>Linux</Text>				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>setLookAndFeel</Method>
+					<ParType>_int</ParType>
+					<ParValue>1</ParValue>				</UserDef>
+			</RadioButtonMenuItem>
+		</Menu>		<Menu>			<Text>ToolTips</Text>
+			<RadioButtonMenuItem>
+				<Text>ON</Text>				<Selected>true</Selected>				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>swichToolTip</Method>
+					<ParType>_boolean</ParType>
+					<ParValue>true</ParValue>				</UserDef>
+			</RadioButtonMenuItem>			<RadioButtonMenuItem>				<Text>Off</Text>
+				<UserDef Action="_SYSTEM">System					<Object>_SWUTIL</Object>
+					<Method>swichToolTip</Method>
+					<ParType>_boolean</ParType>
+					<ParValue>false</ParValue>				</UserDef>
+			</RadioButtonMenuItem>
+		</Menu>    </MenuBar>    
+</UIConfig>

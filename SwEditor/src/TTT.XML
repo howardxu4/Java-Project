@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="myHandle" Init="myHandle">
+   <Panel>
+      <Layout Type="Border"></Layout>
+      <Dimension>
+         <Height>530</Height>
+         <Width>820</Width>
+      </Dimension>
+      <Panel Position="North">
+         <Layout Type="Border"></Layout>
+         <MenuBar Position="North">
+            <Menu>
+               <Text>File</Text>
+               <MenuItem>
+                  <Text>About</Text>
+               </MenuItem>
+               <MenuItem>
+                  <Text>Sport</Text>
+               </MenuItem>
+               <MenuItem>
+                  <Text>Exit</Text>
+               </MenuItem>
+            </Menu>
+            <Menu>
+               <Text>Option</Text>
+            </Menu>
+         </MenuBar>
+         <ToolBar>
+            <ToolBarButton>
+               <Icon>find.gif</Icon>
+            </ToolBarButton>
+            <ToolBarButton>
+               <Icon>gifIcon.gif</Icon>
+            </ToolBarButton>
+         </ToolBar>
+      </Panel>
+      <Panel Position="Center">
+         <Layout Type="Border"></Layout>
+         <SplitPane></SplitPane>
+      </Panel>
+      <TextField Position="South"></TextField>
+   </Panel>
+</UIConfig>

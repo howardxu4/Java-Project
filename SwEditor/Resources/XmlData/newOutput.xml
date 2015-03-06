@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyTest><First Attr="Value1">1st</First><Second Attr="Value2">2nd<SubSecond SubAttr="Value2.2">2nd_two</SubSecond></Second><Third Attr="Value3">3rd</Third></MyTest>

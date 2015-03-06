@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="myTree">	<ScrollPane>
+	<Dimension>
+		<Height>300</Height>
+		<Width>100</Width>
+	</Dimension>	<Tree>
+		<Name>curTree</Name>		<SaveId>curTree</SaveId>		<UserDef Action="_SYSTEM">USER05			<Object>myHandle</Object>
+			<Method>setProperty</Method>
+			<ParType>_object</ParType>
+			<ParValue>_component</ParValue>		</UserDef>		<Model>myTree</Model>
+	</Tree>
+	</ScrollPane>
+</UIConfig>

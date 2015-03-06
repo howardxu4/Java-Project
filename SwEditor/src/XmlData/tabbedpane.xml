@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<TabbedPane>
+		<Name>Here</Name>
+		<SaveId>TabbedPane</SaveId>
+		<Tab>First
+			<Panel>
+					<PopupMenu>
+						<Name>tmPopup</Name>
+						<MenuItem>
+							<Text>MoveUp</Text>
+						</MenuItem>
+						<MenuItem>
+							<Text>MoveDown</Text>
+						</MenuItem>
+						<MenuItem>
+							<Text>Delete</Text>
+						</MenuItem>
+						<Separator/>
+						<MenuItem>
+							<Text>AppendFromRecycleBin</Text>
+						</MenuItem>
+						<Separator/>
+						<MenuItem>
+							<Text>Help</Text>
+						</MenuItem>
+					</PopupMenu>
+			<Component>
+				<Name>none</Name>
+				<Class>ButtonDemo</Class>
+				<ArgType>SwingSet2</ArgType>
+				<ArgValue></ArgValue>
+				<Method>getDemoPanel</Method>
+			</Component>
+			</Panel>
+		</Tab>
+		<Tab>Second
+			<Panel>
+			<Layout Type="Border"></Layout>
+				<Label Position="North">
+					<SaveId>myColor</SaveId>
+					<Text>1234567890</Text>
+				</Label>
+				<ScrollPane  Position="Center">
+					<ColorChooser>
+						<Name>Palette</Name>
+						<Color>128</Color>
+						<UserDef Action="_SYSTEM">System
+							<Object>myHandle</Object>
+							<Method>changeColor</Method>
+							<ParType>_string</ParType>
+							<ParValue>_value</ParValue>
+						</UserDef>
+					</ColorChooser>
+				</ScrollPane>
+			</Panel>
+		</Tab>
+		<Tab Title="Third">
+			<Panel>
+			<Layout Type="Border"></Layout>
+			<ScrollPane Position="Center">
+				<Dimension>
+					<Height>300</Height>
+					<Width>200</Width>
+				</Dimension>
+				<EditorPane>
+					<SaveId>page</SaveId>
+					<Page>XmlData/sp.xml</Page>
+					<Name>xml</Name>
+					<Editable>No</Editable>
+				</EditorPane>
+			</ScrollPane>
+			</Panel>
+		</Tab>
+		<Tab Title="Fourth">
+			<Panel>
+			<Layout Type="Border"></Layout>
+			<ScrollPane Position="Center">
+			<DesktopPane>
+				<InternalFrame>
+					<Title>Quick View Window</Title>
+					<Maximizable>yes</Maximizable>
+					<Resizable>1</Resizable>
+					<Iconifiable>2</Iconifiable>
+					<Rectangle>
+						<X>0</X>
+						<Y>0</Y>
+						<Height>300</Height>
+						<Width>400</Width>
+					</Rectangle>
+					<SaveId>myWindow</SaveId>
+					<Panel>
+						<Layout Type="Border"></Layout>
+						<ScrollPane Position="Center">
+						<SaveId>myScrlPane</SaveId>
+						<Label>
+							<Icon>resources/images/splitpane/earth.jpg</Icon>	
+							<ToolTipText>this is a .. ?</ToolTipText>		
+						</Label>
+						</ScrollPane>
+					</Panel>
+				</InternalFrame>
+				<InternalFrame>
+					<Title>Working Window</Title>
+					<Maximizable>yes</Maximizable>
+					<Resizable>1</Resizable>
+					<Iconifiable>2</Iconifiable>
+					<Rectangle>
+						<X>50</X>
+						<Y>50</Y>
+						<Height>300</Height>
+						<Width>400</Width>
+					</Rectangle>
+					<Panel>
+						<Layout Type="Border"></Layout>
+						<ScrollPane Position="Center">
+						<Tree>
+							<SaveId>delTree</SaveId>
+							<Root>root</Root>
+						</Tree>
+						</ScrollPane>
+					</Panel>
+				</InternalFrame>
+				<InternalFrame>
+					<Title>Trace Window</Title>
+					<Maximizable>yes</Maximizable>
+					<Resizable>1</Resizable>
+					<Iconifiable>2</Iconifiable>
+					<Rectangle>
+						<X>100</X>
+						<Y>100</Y>
+						<Height>300</Height>
+						<Width>400</Width>
+					</Rectangle>
+					<Panel>
+						<Layout Type="Border"></Layout>
+						<ScrollPane Position="Center">
+						<TextArea>
+							<SaveId>myPad</SaveId>
+							<Text>start...</Text>
+						</TextArea>
+						</ScrollPane>
+					</Panel>
+				</InternalFrame>
+				<InternalFrame>
+					<Title>Debug Window</Title>
+					<Maximizable>yes</Maximizable>
+					<Resizable>1</Resizable>
+					<Iconifiable>2</Iconifiable>
+					<Rectangle>
+						<X>150</X>
+						<Y>150</Y>
+						<Height>300</Height>
+						<Width>400</Width>
+					</Rectangle>
+					<Panel>
+						<Layout Type="Border"></Layout>
+						<ScrollPane Position="Center">
+						<EditorPane>
+							<SaveId>myPane</SaveId>
+							<Page>XmlData/sp.xml</Page>
+						</EditorPane>
+						</ScrollPane>
+					</Panel>
+				</InternalFrame>
+				<InternalFrame>
+					<Title>Properties</Title>
+					<Maximizable>yes</Maximizable>
+					<Resizable>1</Resizable>
+					<Iconifiable>2</Iconifiable>
+					<Rectangle>
+						<X>460</X>
+						<Y>0</Y>
+						<Height>440</Height>
+						<Width>240</Width>
+					</Rectangle>
+					<Panel>
+					<SaveId>refresh</SaveId>
+					<Layout Type="Border"></Layout>
+					<SplitPane  Position="Center">
+						<Orientation>Vertical</Orientation>
+						<ContinuousLayout>true</ContinuousLayout>
+						<OneTouchExpandable></OneTouchExpandable>
+						<DividerLocation>150</DividerLocation>
+						<LeftComponent>						
+						<ScrollPane>
+							<Panel>
+							<Layout Type="Border"/>
+							<Panel Position="North">
+								<SaveId>putHere</SaveId>	
+								<Layout Type="Border"/>
+							</Panel>
+							<Box Position="Center" Style="VerticalGlue"/>
+							</Panel>
+						</ScrollPane>
+						</LeftComponent>
+						<RightComponent>
+							<Panel>
+							<Layout Type="Border"/>
+							<Panel Position="North">
+								<SaveId>setHere</SaveId>	
+								<Layout Type="Border"/>
+							</Panel>
+							<Box Position="Center" Style="VerticalGlue"/>
+							</Panel>
+						</RightComponent>
+					</SplitPane>
+					</Panel>
+				</InternalFrame>
+			</DesktopPane>
+			</ScrollPane>
+			</Panel>
+		</Tab>
+	</TabbedPane>
+</UIConfig>

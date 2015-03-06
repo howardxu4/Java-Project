@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="ObjMgr.ObjDemo">	<ToolBar>
+		<SaveId>myTB</SaveId>
+		<ToolBarButton>1			<Name>Hi</Name>
+			<Icon>find.gif</Icon>
+			<UserDef Action="_SYSTEM">				<Object>ObjDemo</Object>
+				<Method>changeToolBar</Method>
+				<ParType>_boolean</ParType>
+				<ParValue>true</ParValue>			</UserDef>
+		</ToolBarButton>		<ToolBarButton>2
+		<Button>
+			<Name>Bye</Name>
+			<Icon>gificon.gif</Icon>
+			<UserDef Action="_SYSTEM">SYSTEM				<Object>ObjDemo</Object>
+				<Method>changeToolBar</Method>
+				<ParType>_boolean</ParType>
+				<ParValue>false</ParValue>			</UserDef>
+		</Button>
+		</ToolBarButton>	</ToolBar></UIConfig>

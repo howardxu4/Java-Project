@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<Panel>	<Dimension>
+		<Height>120</Height>
+		<Width>100</Width>	</Dimension>
+	<Layout Type="BorderLaout">	<Label Position="North">
+		<Text>Position:</Text>		<Alignment>Center</Alignment>
+	</Label>
+	<Panel Position="Center">		<Border Type="Etched"/>		<Layout Type="BoxLayout.Y_AXIS">
+		<Panel>			<Layout Type="Border">
+			<Button Position="North">
+			<Name>North</Name>			<UserDef Action="myPos">SYSTEM</UserDef>			<Border Type="Raised"/>
+			<Dimension>
+				<Height>20</Height>
+				<Width>100</Width>			</Dimension>
+			</Button>
+			<Button Position="East">			<Name>East</Name>			<UserDef Action="myPos">SYSTEM</UserDef>			<Border Type="Raised"/>			<Dimension>
+				<Height>60</Height>
+				<Width>20</Width>			</Dimension>
+			</Button>
+			<Button Position="West">			<Name>West</Name>			<UserDef Action="myPos">SYSTEM</UserDef>			<Border Type="Raised"/>			<Dimension>
+				<Height>60</Height>
+				<Width>20</Width>			</Dimension>
+			</Button>
+			<Button Position="Center">			<Name>Center</Name>			<UserDef Action="myPos">SYSTEM</UserDef>			<Border Type="Etched"/>			</Button>
+			<Button Position="South">			<Name>South</Name>			<UserDef Action="myPos">SYSTEM</UserDef>			<Border Type="Raised"/>			<Dimension>
+				<Height>20</Height>
+				<Width>100</Width>			</Dimension>
+			</Button>
+			</Layout>
+		</Panel>
+		</Layout> 	</Panel>
+	<Button Position="South">		<Border Type="Etched"/>
+		<Text>(none)</Text>		<Name></Name>		<UserDef Action="myPos">SYSTEM</UserDef>		<Dimension>
+			<Height>20</Height>
+			<Width>100</Width>		</Dimension>
+	</Button>		 	</Layout>
+ 	</Panel>	</UIConfig>

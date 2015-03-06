@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIProperty>
+<UIConfig>
+	<Type>TAG</Type>	<Array>		<Item>Attribute</Item>
+		<Item>Load</Item>
+		<Item>Attribute</Item>
+		<Item>Init</Item>
+		<Item>Container</Item>
+		<Item>Contain01</Item>	</Array>
+</UIConfig>
+<Load>
+	<Type>STR</Type>
+</Load><Init>
+	<Type>STR</Type>
+</Init><XmlFile>
+	<Type>ICON</Type></XmlFile>
+<Position>
+	<Type>DIAL</Type>	<Array>		<Item></Item>
+		<Item>East</Item>
+		<Item>North</Item>
+		<Item>West</Item>
+		<Item>South</Item>
+		<Item>Center</Item>
+	</Array></Position>
+<Layout>
+	<Type>COMB</Type>	<Array>
+		<Item></Item>
+		<Item>Border</Item>
+		<Item>Box.X_AXIS</Item>
+		<Item>Box.Y_AXIS</Item>
+		<Item>Grid</Item>
+		<Item>Flow</Item>
+	</Array>
+	<Func>2:Grid;Row,Col</Func></Layout>
+<Row>
+	<Type>HIDE_INT</Type></Row>
+<Col>
+	<Type>HIDE_INT</Type></Col>
+<Foreground>
+	<Type>COLR</Type></Foreground>
+<Background>
+	<Type>COLR</Type></Background>
+<Dimension>
+	<Type>TREE</Type>
+	<Array>
+		<Item>Height</Item>		<Item>Width</Item>
+	</Array></Dimension>
+<Height>
+	<Type>SUBT</Type></Height>
+<Width>
+	<Type>SUBT</Type></Width>
+<Border>
+	<Type>COMB</Type>	<Array>		<Item></Item>
+		<Item>Etched</Item>
+		<Item>Line</Item>
+		<Item>Raised</Item>
+		<Item>Lowered</Item>
+		<Item>Empty</Item>
+	</Array></Border><UserDef>
+	<Type>COMB</Type>
+	<Array>		<Item></Item>
+		<Item>USER01</Item>
+		<Item>USER02</Item>
+		<Item>USER03</Item>
+		<Item>USER04</Item>
+		<Item>USER05</Item>
+		<Item>USER06</Item>
+		<Item>USER07</Item>
+		<Item>USER08</Item>
+		<Item>USER09</Item>
+		<Item>SYSTEM</Item>
+	</Array></UserDef><Action>
+	<Type>COMB</Type>
+	<Array>		<Item></Item>
+		<Item>_SYSTEM</Item>
+	</Array>
+	<Func>4:_SYSTEM;Object,Method,ParType,ParValue</Func></Action><Object>	<Type>HIDE_COMB</Type>	<Array>		<Item></Item>
+		<Item>_this</Item>
+		<Item>_SWUTIL</Item>
+	</Array>
+</Object><Method>
+	<Type>HIDE_STR</Type></Method><ParType>	<Type>HIDE_COMB</Type>	<Array>		<Item></Item>
+		<Item>_int</Item>
+		<Item>_boolean</Item>
+		<Item>_byname</Item>
+		<Item>_object</Item>
+	</Array></ParType><ParValue>
+	<Type>HIDE_COMB</Type>	<Array>		<Item></Item>
+		<Item>_value</Item>
+		<Item>_component</Item>
+		<Item>_event</Item>
+	</Array></ParValue>
+<SaveId>
+	<Type>STR</Type></SaveId>
+<Alignment>
+	<Type>DIAL</Type>	<Array>
+		<Item></Item>
+		<Item>Top</Item>
+		<Item>TopLeft</Item>
+		<Item>Left</Item>
+		<Item>LefDown</Item>
+		<Item>Down</Item>
+		<Item>RightDown</Item>
+		<Item>Right</Item>
+		<Item>TopRight</Item>
+		<Item>Center</Item>
+	</Array></Alignment><Visible>
+	<Type>BOOL</Type></Visible><Mnemonic>	<Type>STR</Type></Mnemonic><ToolTipText>	<Type>STR</Type></ToolTipText><ContinuousLayout>	<Type>BOOL</Type></ContinuousLayout><OneTouchExpandable>	<Type>BOOL</Type></OneTouchExpandable><Orientation>	<Type>COMB</Type>
+	<Array>		<Item></Item>		<Item>Vertical</Item>		<Item>Horizontal</Item>
+	</Array></Orientation><DividerLocation>	<Type>INT</Type></DividerLocation><LeftComponent>
+	<Type>TAG</Type>	<Array>
+		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Container</Item>
+		<Item>Contain01</Item>	</Array>
+</LeftComponent><RightComponent>
+	<Type>TAG</Type>	<Array>		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Container</Item>
+		<Item>Contain01</Item>	</Array>
+</RightComponent><InternalFrame>	<Type>LABL</Type></InternalFrame><Title>	<Type>STR</Type></Title><Closable>	<Type>BOOL</Type></Closable><Maximizable>	<Type>BOOL</Type></Maximizable><Iconifiable>	<Type>BOOL</Type></Iconifiable><Resizable>	<Type>BOOL</Type></Resizable><Text>	<Type>STR</Type></Text><Selected>	<Type>BOOL</Type></Selected>
+<Icon>
+	<Type>ICON</Type></Icon><PressedIcon>	<Type>ICON</Type></PressedIcon><RolloverIcon>	<Type>ICON</Type></RolloverIcon><DisabledIcon>	<Type>ICON</Type></DisabledIcon><RolloverSelectedIcon>	<Type>ICON</Type></RolloverSelectedIcon><SelectedIcon>	<Type>ICON</Type></SelectedIcon><Margin>
+	<Type>BOOL</Type></Margin><Editable>	<Type>BOOL</Type></Editable><Model>	<Type>STR</Type></Model><Item>	<Type>STR</Type></Item><VisibleRowCount>	<Type>INT</Type></VisibleRowCount>
+<Node>	<Type>TAG</Type>	<Array>		<Item>Attribute</Item>		<Item>String</Item>		<Item>Container</Item>		<Item>Nodes</Item>	</Array>
+</Node><Page>	<Type>ICON</Type></Page><Columns>
+	<Type>INT</Type></Columns>
+<Rows>
+	<Type>INT</Type></Rows><Value>
+	<Type>INT</Type></Value>
+<Rectangle>	<Type>TREE</Type>	<Array>
+		<Item>Height</Item>		<Item>Width</Item>
+		<Item>Y</Item>		<Item>X</Item>
+	</Array></Rectangle>
+<X>
+	<Type>SUBT</Type></X>
+<Y>
+	<Type>SUBT</Type></Y>
+<StringPainted>	<Type>BOOL</Type></StringPainted><String>	<Type>STR</Type></String>
+<Box>
+	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>		<Item>Position</Item>
+		<Item>Attribute</Item>		<Item>Style</Item>		<Item>Container</Item>		<Item>Contains</Item>
+	</Array>
+</Box>
+<Style>	<Type>COMB</Type>	<Array>
+		<Item>Horizontal</Item>		<Item>HorizontalGlue</Item>		<Item>HorizontalStrut</Item>		<Item>Vertical</Item>		<Item>VerticalGlue</Item>		<Item>VerticalStrut</Item>		<Item>RigidArea</Item>	</Array></Style>
+<Maximum>	<Type>INT</Type></Maximum><Minimum>	<Type>INT</Type></Minimum><PaintTicks>	<Type>BOOL</Type></PaintTicks><MinorTickSpacing>	<Type>INT</Type></MinorTickSpacing><MajorTickSpacing>	<Type>INT</Type></MajorTickSpacing><Class>	<Type>STR</Type></Class><ArgType>	<Type>STR</Type></ArgType><ArgValue>	<Type>STR</Type></ArgValue><ButtonGroup>	<Type>TAG</Type>
+	<Array>		<Item>Attribute</Item>
+		<Item>Name</Item>
+	</Array></ButtonGroup><Separator>
+	<Type>BOOL</Type></Separator>
+<Color>
+	<Type>INT</Type>
+</Color><Name>	<Type>STR</Type></Name>
+<AttrOptn>	<Type>VTAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Attribute</Item>
+		<Item>Position</Item>
+	</Array></AttrOptn><UserOptn>
+	<Type>VTAG</Type>
+	<Array>
+		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>UserDef</Item>
+		<Item>Attribute</Item>
+		<Item>Action</Item>
+	</Array></UserOptn>
+<BasicOptn>
+	<Type>VTAG</Type>
+	<Array>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Foreground</Item>
+		<Item>Option</Item>
+		<Item>Background</Item>
+		<Item>Option</Item>
+		<Item>ToolTipText</Item>
+		<Item>Option</Item>
+		<Item>Border</Item>
+	</Array></BasicOptn>
+<Icons>	<Type>VTAG</Type>
+	<Array>
+		<Item>Option</Item>
+		<Item>Icon</Item>		<Item>Option</Item>
+		<Item>PressedIcon</Item>		<Item>Option</Item>
+		<Item>RolloverIcon</Item>		<Item>Option</Item>
+		<Item>DisabledIcon</Item>		<Item>Option</Item>
+		<Item>RolloverSelectedIcon</Item>		<Item>Option</Item>
+		<Item>SelectedIcon</Item>	</Array>
+</Icons><AbsButton>
+	<Type>VTAG</Type>
+	<Array>
+		<Item>Option</Item>
+		<Item>UserOptn</Item>		<Item>Option</Item>
+		<Item>BasicOptn</Item>		<Item>Option</Item>
+		<Item>Alignment</Item>		<Item>Option</Item>
+		<Item>Text</Item>		<Item>Option</Item>
+		<Item>Icons</Item>		<Item>Option</Item>
+		<Item>Selected</Item>		<Item>Option</Item>
+		<Item>Margin</Item>	</Array>
+</AbsButton>
+<AbsField>	<Type>VTAG</Type>
+	<Array>
+		<Item>Attribute</Item>		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>UserOptn</Item>		<Item>Option</Item>
+		<Item>BasicOptn</Item>		<Item>Option</Item>
+		<Item>Text</Item>		<Item>Option</Item>
+		<Item>Columns</Item>		<Item>Option</Item>
+		<Item>Editable</Item>	</Array></AbsField>
+<Frame>	<Type>TAG</Type>	<Array>		<Item>Required</Item>
+		<Item>Title</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Container</Item>
+		<Item>MenuBar01</Item>
+		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Container</Item>
+		<Item>ToolBar01</Item>
+		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Container</Item>
+		<Item>Panel01</Item>
+		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+	</Array>
+</Frame><MenuBar>
+	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AttrOptn</Item>
+		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Container</Item>
+		<Item>Menus</Item>
+	</Array></MenuBar>
+<Menu>
+	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Required</Item>
+		<Item>Text</Item>
+		<Item>Option</Item>
+		<Item>Mnemonic</Item>
+		<Item>Container</Item>		<Item>MenuItems</Item>
+	</Array></Menu><PopupMenu>
+	<Type>TAG</Type>
+	<Array>		<Item>Required</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Mnemonic</Item>
+		<Item>Container</Item>		<Item>MenuItems</Item>
+	</Array></PopupMenu><ToolBar>
+	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AttrOptn</Item>
+		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Container</Item>
+		<Item>ToolBarButtons</Item>	</Array></ToolBar><ToolBarButton>
+	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Required</Item>
+		<Item>Icon</Item>
+		<Item>Option</Item>
+		<Item>ToolTipText</Item>		<Item>Container</Item>
+		<Item>MiscControls</Item>	</Array></ToolBarButton>
+<Panel>
+	<Type>TAG</Type>	<Array>		<Item>Option</Item>
+		<Item>AttrOptn</Item>
+		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>BasicOptn</Item>
+		<Item>Option</Item>
+		<Item>Alignment</Item>
+		<Item>Container</Item>
+		<Item>Contains</Item>
+		<Item>Attribute</Item>		<Item>Layout</Item>	</Array>
+</Panel>
+<ScrollPane>
+	<Type>TAG</Type>	<Array>		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Attribute</Item>
+		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Container</Item>
+		<Item>Contain01</Item>
+	</Array>
+</ScrollPane>
+<SplitPane>
+	<Type>TAG</Type>	<Array>		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Attribute</Item>
+		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>
+		<Item>Option</Item>
+		<Item>ContinuousLayout</Item>
+		<Item>Option</Item>
+		<Item>OneTouchExpandable</Item>
+		<Item>Option</Item>
+		<Item>DividerLocation</Item>
+		<Item>Option</Item>
+		<Item>Orientation</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Container</Item>
+		<Item>LeftComponent</Item>
+		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+		<Item>Container</Item>
+		<Item>RightComponent</Item>		<Item>Attribute</Item>
+		<Item>XmlFile</Item>
+	</Array>
+</SplitPane>
+<TabbedPane>
+	<Type>TAG</Type>	<Array>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Container</Item>
+		<Item>Tabs</Item>	</Array>
+</TabbedPane>
+<Tab>	<Type>TAG</Type>	<Array>		<Item>Attribute</Item>
+		<Item>Title</Item>		<Item>Container</Item>
+		<Item>Contain01</Item>	</Array>
+</Tab>
+<Button>	<Type>TAG</Type>
+	<Array>		<Item>Attribute</Item>		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></Button>
+<RadioButton>	<Type>TAG</Type>
+	<Array>		<Item>Attribute</Item>		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></RadioButton>
+<CheckBox>	<Type>TAG</Type>
+	<Array>		<Item>Attribute</Item>		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></CheckBox>
+<ToggleButton>	<Type>TAG</Type>
+	<Array>		<Item>Attribute</Item>		<Item>Position</Item>
+		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></ToggleButton>
+<MenuItem>	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></MenuItem>
+<RadioButtonMenuItem>	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></RadioButtonMenuItem>
+<CheckBoxMenuItem>	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AbsButton</Item>
+	</Array></CheckBoxMenuItem><TextField>	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AbsField</Item>
+	</Array></TextField>
+<FormattedTextField>	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AbsField</Item>
+	</Array></FormattedTextField>
+<PasswordField>	<Type>TAG</Type>
+	<Array>		<Item>Option</Item>
+		<Item>AbsField</Item>
+	</Array></PasswordField><ComboBox>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Editable</Item>
+		<Item>Option</Item>
+		<Item>Model</Item>
+		<Item>Option</Item>
+		<Item>Items</Item>
+	</Array></ComboBox><List>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>VisibleRowCount</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Model</Item>
+		<Item>Option</Item>
+		<Item>Items</Item>
+	</Array></List>
+<Label>
+	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>BasicOptn</Item>		<Item>Option</Item>
+		<Item>Alignment</Item>
+		<Item>Option</Item>
+		<Item>Text</Item>
+		<Item>Option</Item>
+		<Item>Icon</Item>
+	</Array></Label>
+<Tree>
+	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Model</Item>
+		<Item>Option</Item>
+		<Item>Root</Item>
+		<Item>Attribute</Item>		<Item>String</Item>		<Item>Container</Item>		<Item>Nodes</Item>	</Array></Tree><ColorChooser>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Color</Item>
+	</Array></ColorChooser><EditorPane>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>		<Item>Option</Item>
+		<Item>Visible</Item>		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Text</Item>
+		<Item>Option</Item>
+		<Item>Editable</Item>
+		<Item>Option</Item>
+		<Item>Page</Item>
+	</Array></EditorPane><DesktopPane>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>		<Item>Option</Item>
+		<Item>Visible</Item>		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>ToolTipText</Item>		<Item>Container</Item>
+		<Item>InternalFrames</Item>	</Array></DesktopPane><InternalFrame>	<Type>TAG</Type>
+	<Array>
+		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>SaveId</Item>		<Item>Option</Item>
+		<Item>Title</Item>		<Item>Option</Item>
+		<Item>Closable</Item>
+		<Item>Option</Item>
+		<Item>Maximizable</Item>
+		<Item>Option</Item>
+		<Item>Iconifiable</Item>
+		<Item>Option</Item>
+		<Item>Resizable</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Rectangle</Item>
+		<Item>Container</Item>
+		<Item>Contains</Item>	</Array></InternalFrame><Component>
+	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>Name</Item>
+		<Item>Option</Item>
+		<Item>Class</Item>		<Item>Option</Item>
+		<Item>ArgType</Item>		<Item>Option</Item>
+		<Item>ArgValue</Item>
+		<Item>Option</Item>
+		<Item>Method</Item>	</Array></Component>
+<Progressbar>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Value</Item>
+		<Item>Option</Item>
+		<Item>StringPainted</Item>
+		<Item>Option</Item>
+		<Item>Maximum</Item>
+		<Item>Option</Item>
+		<Item>Minimum</Item>
+	</Array></Progressbar>
+<ScrollBar>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Value</Item>
+		<Item>Option</Item>
+		<Item>Orientation</Item>
+		<Item>Option</Item>
+		<Item>Maximum</Item>
+		<Item>Option</Item>
+		<Item>Minimum</Item>
+	</Array></ScrollBar><Slider>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Value</Item>
+		<Item>Option</Item>
+		<Item>Orientation</Item>
+		<Item>Option</Item>
+		<Item>Maximum</Item>
+		<Item>Option</Item>
+		<Item>Minimum</Item>
+		<Item>Option</Item>
+		<Item>PaintTicks</Item>
+		<Item>Option</Item>
+		<Item>MinorTickSpacing</Item>
+		<Item>Option</Item>
+		<Item>MajorTickSpacing</Item>
+	</Array></Slider><Spiner>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Value</Item>
+	</Array></Spiner><TextArea>	<Type>TAG</Type>
+	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>
+		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Text</Item>
+		<Item>Option</Item>
+		<Item>Columns</Item>
+		<Item>Option</Item>
+		<Item>Rows</Item>
+		<Item>Option</Item>
+		<Item>Editable</Item>
+	</Array></TextArea><TextPane>	<Type>TAG</Type>	<Array>
+		<Item>Attribute</Item>
+		<Item>Position</Item>		<Item>Option</Item>
+		<Item>UserOptn</Item>
+		<Item>Option</Item>
+		<Item>Visible</Item>		<Item>Option</Item>
+		<Item>Dimension</Item>
+		<Item>Option</Item>
+		<Item>Text</Item>
+		<Item>Option</Item>
+		<Item>Editable</Item>
+		<Item>Option</Item>
+		<Item>Page</Item>
+	</Array></TextPane><Contains>
+	<Type>MENUBAR</Type>
+	<Array>
+		<Item>Containers</Item>
+		<Item>Buttons</Item>
+		<Item>Texts</Item>		<Item>Commons</Item>
+		<Item>Specials</Item>
+	</Array></Contains><Contain01>
+	<Type>MENUBAR</Type>
+	<Array>
+		<Item>Containers</Item>
+		<Item>Buttons</Item>
+		<Item>Texts</Item>		<Item>Commons</Item>
+		<Item>Specials</Item>
+	</Array></Contain01><Containers>
+	<Type>MENU</Type>
+	<Array>
+		<Item>Panel</Item>
+		<Item>SplitPane</Item>
+		<Item>TabbedPane</Item>
+		<Item>ScrollPane</Item>
+		<Item>DesktopPane</Item>
+		<Item>ToolBar</Item>
+		<Item>MenuBar</Item>
+		<Item>PopupMenu</Item>
+		<Item>InternalFrame</Item>
+	</Array></Containers><Buttons>	<Type>MENU</Type>
+	<Array>
+		<Item>Button</Item>
+		<Item>ToggleButton</Item>
+		<Item>RadioButton</Item>
+		<Item>ChechBox</Item>
+		<Item>ButtonGroup</Item>
+	</Array></Buttons><Texts>	<Type>MENU</Type>
+	<Array>
+		<Item>Label</Item>
+		<Item>TextField</Item>
+		<Item>PasswordField</Item>
+		<Item>FormattedTextField</Item>
+		<Item>TextArea</Item>
+		<Item>EditorPane</Item>
+		<Item>TextPane</Item>
+	</Array></Texts>
+<Commons>
+	<Type>MENU</Type>
+	<Array>
+		<Item>ComboBox</Item>
+		<Item>List</Item>
+		<Item>Table</Item>
+		<Item>Tree</Item>
+	</Array></Commons><Specials>
+	<Type>MENU</Type>
+	<Array>
+		<Item>ScrollBar</Item>
+		<Item>Spinner</Item>
+		<Item>Slider</Item>
+		<Item>ProgressBar</Item>
+		<Item>ColorChooser</Item>
+		<Item>Dialog</Item>
+		<Item>Window</Item>
+		<Item>Frame</Item>
+	</Array></Specials><MiscControls>	<Type>MENU</Type>
+	<Array>		<Item>Button</Item>
+		<Item>TextField</Item>
+		<Item>ComboBox</Item>
+		<Item>RadioButton</Item>
+		<Item>ButtonGroup</Item>
+		<Item>CheckBox</Item>
+		<Item>Separator</Item>
+		<Item>ToggleButton</Item>
+	</Array></MiscControls>
+<MenuItems>
+	<Type>MENU</Type>
+	<Array>		<Item>MenuItem</Item>
+		<Item>CheckBoxMenuItem</Item>
+		<Item>RadioButtonMenuItem</Item>
+		<Item>Separator</Item>
+		<Item>ButtonGroup</Item>
+		<Item>Menu</Item>
+	</Array></MenuItems>
+<Menus>
+	<Type>MENU</Type>
+	<Array>		<Item>Menu</Item>
+	</Array></Menus><ToolBarButtons>
+	<Type>MENU</Type>
+	<Array>		<Item>ToolBarButton</Item>
+	</Array></ToolBarButtons>
+<Tabs>
+	<Type>MENU</Type>
+	<Array>		<Item>Tab</Item>
+	</Array></Tabs><ToolBar01>
+	<Type>MENU</Type>
+	<Array>		<Item>ToolBar</Item>
+	</Array></ToolBar01>
+<Panel01>
+	<Type>MENU</Type>
+	<Array>		<Item>Panel</Item>
+	</Array></Panel01><MenuBar01>	<Type>MENU</Type>
+	<Array>		<Item>MenuBar</Item>
+	</Array></MenuBar01><InternalFrames>	<Type>MENU</Type>
+	<Array>		<Item>InternalFrame</Item>
+	</Array></InternalFrames><Nodes>	<Type>MENU</Type>
+	<Array>		<Item>Node</Item>
+	</Array></Nodes>
+</UIProperty>

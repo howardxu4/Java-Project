@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="myHandle" Init="myHandle">
+	<Panel>
+	<Dimension>
+		<Width>820</Width>
+		<Height>540</Height>
+	</Dimension>
+	<Layout Type="Border">
+		<Panel Position="North">
+			<Layout Type="Border">
+			<MenuBar Position="North" XmlFile="XmlData/menubar.xml"/> 
+    <!--                    
+			<ToolBar Position="Center" XmlFile="XmlData/ToolBar.xml"/>
+     -->                   
+			</Layout>
+		</Panel>
+		<Panel Position="Center">
+			<Layout Type="Border">
+			<SplitPane Position="Center">
+				<ContinuousLayout>true</ContinuousLayout>
+				<OneTouchExpandable></OneTouchExpandable>
+				<DividerLocation>150</DividerLocation>
+				<RightComponent>
+                                    
+                                        <Panel XmlFile="XmlData/editor.xml"/>
+                                     <!--
+					<TabbedPane XmlFile="XmlData/tabbedpane.xml"/>
+                                      --> 
+				</RightComponent>
+				<LeftComponent>
+					<Tree XmlFile="XmlData/treepane.xml"/>
+				</LeftComponent>
+			</SplitPane>
+			</Layout>
+		</Panel>
+		<TextField Position="South">
+			<SaveId>Status</SaveId>
+			<Editable>false</Editable>
+			<Border Type="Lowered"/>
+			<Text>start...</Text>
+		</TextField>
+	</Layout>
+ 	</Panel>	
+</UIConfig>

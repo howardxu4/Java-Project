@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="myComboBoxDemo">
+   <Panel>
+      <Border Type="Etched"></Border>
+      <Name>ComboBoxDemo</Name>
+      <SaveId>myComboBoxDemo</SaveId>
+      <LayOut Type="Border"></LayOut>
+      <Dimension Size="Preferred">
+         <Width>650</Width>
+         <Height>540</Height>
+      </Dimension>
+      <Panel Position="West">
+         <Layout Type="Box.Y_AXIS"></Layout>
+         <Border Type="20"></Border>
+         <Label>
+            <Text>Present:</Text>
+            <Alignment>Center</Alignment>
+         </Label>
+         <ComboBox>
+            <Name>chgHairEyesMouth</Name>
+            <SaveId>HairEyesMouth</SaveId>
+            <UserDef>USER03</UserDef>
+            <Dimension>
+               <Width>160</Width>
+               <Height>25</Height>
+            </Dimension>
+            <Dimension Size="Maximum">
+               <Width>160</Width>
+               <Height>30</Height>
+            </Dimension>
+            <Item>Philip, Howard, Jeff</Item>
+            <Item>Jeff, Larry, Philip</Item>
+            <Item>Howard, Scott, Hans</Item>
+            <Item>Philip, Jeff, Hans</Item>
+            <Item>Brent, Jon, Scott</Item>
+            <Item>Lara, Larry, Lisa</Item>
+            <Item>James, Philip, Michael</Item>
+            <Item>Philip, Lisa, Brent</Item>
+            <Item>James, Philip, Jon</Item>
+            <Item>Lara, Jon, Scott</Item>
+         </ComboBox>
+         <Box Style="RigidArea">
+            <Dimension>
+               <Height>25</Height>
+               <Width>1</Width>
+            </Dimension>
+         </Box>
+         <Label>
+            <Text>Hair:</Text>
+            <Alignment>Center</Alignment>
+         </Label>
+         <ComboBox>
+            <Name>chgHair</Name>
+            <SaveId>ComboHair</SaveId>
+            <UserDef>USER03</UserDef>
+            <Dimension>
+               <Width>160</Width>
+               <Height>25</Height>
+            </Dimension>
+            <Dimension Size="Maximum">
+               <Width>160</Width>
+               <Height>30</Height>
+            </Dimension>
+            <Item>Brent</Item>
+            <Item>Georges</Item>
+            <Item>Hans</Item>
+            <Item>Howard</Item>
+            <Item>James</Item>
+            <Item>Jeff</Item>
+            <Item>Jon</Item>
+            <Item>Lara</Item>
+            <Item>Larry</Item>
+            <Item>Lisa</Item>
+            <Item>Michael</Item>
+            <Item Selected="y">Philip</Item>
+            <Item>Scott</Item>
+         </ComboBox>
+         <Box Style="RigidArea">
+         <Dimension>
+            <Height>25</Height>
+            <Width>1</Width>
+         </Dimension>
+         </Box>
+         <Label>
+            <Text>Eye and Nose:</Text>
+            <Alignment>Center</Alignment>
+         </Label>
+         <ComboBox>
+            <Name>chgEyes</Name>
+            <SaveId>ComboEyes</SaveId>
+            <UserDef>USER03</UserDef>
+            <Dimension>
+               <Width>160</Width>
+               <Height>25</Height>
+            </Dimension>
+            <Dimension Size="Maximum">
+               <Width>160</Width>
+               <Height>30</Height>
+            </Dimension>
+            <Model>myComboModel</Model>
+         </ComboBox>
+         <Box Style="RigidArea">
+         <Dimension>
+            <Height>25</Height>
+            <Width>1</Width>
+         </Dimension>
+         </Box>
+         <Label>
+            <Text>Mouth:</Text>
+            <Alignment>Center</Alignment>
+         </Label>
+         <ComboBox>
+            <Name>chgMouth</Name>
+            <SaveId>ComboMouth</SaveId>
+            <UserDef>USER03</UserDef>
+            <Dimension Size="Maximum">
+               <Width>160</Width>
+               <Height>30</Height>
+            </Dimension>
+            <Model>myComboModel01</Model>
+         </ComboBox>
+         <Box Style="RigidArea">
+            <Dimension>
+               <Height>25</Height>
+               <Width>1</Width>
+            </Dimension>
+         </Box>
+         <Button>
+            <Text>Save</Text>
+            <UserDef>USER03</UserDef>
+         </Button>
+         <Box Style="RigidArea">
+            <Dimension>
+               <Height>25</Height>
+               <Width>1</Width>
+            </Dimension>
+         </Box>
+         <Button>
+            <Text>Delete</Text>
+            <UserDef>USER03</UserDef>
+         </Button>
+         <Box Style="RigidArea">
+            <Dimension>
+               <Height>25</Height>
+               <Width>1</Width>
+            </Dimension>
+         </Box>
+         <Button>
+            <Text>Random</Text>
+            <UserDef>USER03</UserDef>
+         </Button>
+         <Box Style="VerticalGlue">
+         </Box>
+      </Panel>
+      <Panel Position="Center">
+         <Border Type="20"></Border>
+      <Panel>
+         <Border Type="Lowered"></Border>
+         <Panel>
+            <Layout Type="Box.Y_AXIS"></Layout>
+            <Border Type="20"></Border>
+            <Label>
+               <SaveId>Hair</SaveId>
+               <Icon>resources/images/combobox/philiphair.jpg</Icon>
+               <Dimension Size="Minimum">
+                  <Height>20</Height>
+                  <Width>20</Width>
+               </Dimension>
+            </Label>
+            <Label>
+               <SaveId>Eyes</SaveId>
+               <Icon>resources/images/combobox/howardeyes.jpg</Icon>
+               <Dimension Size="Minimum">
+                  <Height>20</Height>
+                  <Width>20</Width>
+               </Dimension>
+            </Label>
+            <Label>
+               <SaveId>Mouth</SaveId>
+               <Icon>resources/images/combobox/jeffmouth.jpg</Icon>
+               <Dimension Size="Minimum">
+                  <Height>20</Height>
+                  <Width>20</Width>
+               </Dimension>
+            </Label>
+            <Box Style="VerticalStrut">
+               <Size>40</Size>
+            </Box>
+            </Panel>
+         </Panel>
+      </Panel>
+   </Panel>
+</UIConfig>

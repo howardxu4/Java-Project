@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<Window>
+	<LayOut Type="Border"></LayOut>
+	<Dimension>
+		<Width>620</Width>		<Height>540</Height>
+	</Dimension>	<Panel Position="North">		<LayOut Type="Border"></LayOut>
+		<MenuBar Position="North" XmlFile="menubar.xml"></MenuBar>
+		<ToolBar Position="South">
+			<ToolBarButton>1			<Button>
+				<Name>Hi</Name>
+				<Icon>find.gif</Icon>
+			</Button>
+			</ToolBarButton>			<ToolBarButton>2
+			<Button>
+				<Name>Bye</Name>
+				<Icon>gificon.gif</Icon>
+			</Button>
+			</ToolBarButton>		</ToolBar>
+    </Panel>    <Panel  Position="Center">  		<LayOut Type="Border"></LayOut>
+		<Label Position="North">		<Text>This is a test for menu on different places</Text>		</Label>  
+		<Panel Position="Center" XmlFile="XmlData/myComboBoxDemo.xml"/>
+		<ToolBar Position="East">
+			<ToolBarButton>1			<Button>
+				<Name>Hi</Name>
+				<Icon>find.gif</Icon>
+			</Button>
+			</ToolBarButton>			<ToolBarButton>2
+			<Button>
+				<Name>Bye</Name>
+				<Icon>gificon.gif</Icon>
+			</Button>
+			</ToolBarButton>		</ToolBar>
+		<MenuBar Position="South" XmlFile="menubar.xml"></MenuBar>
+	</Panel>
+    <TextField Position="South">    <Columns>100</Columns>
+    </TextField> 	</Window>	</UIConfig>

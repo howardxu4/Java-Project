@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Frame (Titile?, Demesion?, MenuBar?, ToolBar?, Panel, SaveId?)>
+<!ELEMENT Titile #PCDATA>
+<!ELEMENT Dimesion (Hight, Width)>
+<!ATTLIST Dimension Size (Minimum | Maximum | Preferred) "Preferred">
+<!ELEMENT MenuBar (Name?, SaveId?, Visible?, Menu*)>
+<!ATTLIST MenuBar XmlFile #PCDATA #IMPLIED>
+<!ELEMENT Menu (Name?, Text, Mnemonic?, SaveId?, Menu*, MenuItem*, CheckBoxMenuItem*, RadioMenuItem*, Separator*, ButtonGroup?)>
+<!ELEMENT ToolBar (SaveId?, Visible?, Separator*, ToolBarButton*, SwCtrl*>
+<!ATTLIST Toolbar XmlFile (#PCDATA) #IMPLIED>
+<!ELEMENT Hight (#PCDATA)>
+<!ELEMENT Width (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT SaveId (#PCDATA)>
+<!ELEMENT Mnemonic (#PCDATA)>
+<!ELEMENT Visible EMPTYT>
+<!ELEMENT Separator EMPTY>
+<!ELEMENT Panel (Name?, SaveId?, UserDef?, Visible?, Layout?, Border?, Alignment?, Foreground?, Background?, SwCtrl*)>
+<!ELEMENT UserDef (#PCDATA, UserCall?>
+<!ATTLIST UserDef
+	Action (_SYSTEM | #CDATA)  
+	Alter Key #REQUIRED
+>
+<!ELEMENT UserCall (Object, Method, parType?, parValue?)>
+<!ELEMENT Object (_this | CDATA)>
+<!ELEMENT Method (CDATA)>
+<!ELEMENT parType (_int | _boolean | _Object)>
+<!ELEMENT parValue (_value | CDATA)>
+<!ELEMENT Layout EMPTY>
+<!ATTLIST Layout 
+	Type (Box.XAXIS |Box.YAXIS | Grid| Flow.LEFT |Flow.CENTER |Flow.RIGHT |Border) 
+	Col (#PCDATA)
+	Row (#PCDATA)
+>
+<!ELEMENT Border EMPTY> 
+<!ATTLIST Border 
+	Title ( Etched | Line | Raised | Lowered | CDATA)
+>
+<!ELEMENT Box (EMPTY | SwCtrl* | Size | Dimesion)> 
+<!ATTLIST Box 
+	Type ( Horizontal | HorizontalGlue | HorizontalStrut | Vertical | VerticalGlue | VerticalStrut | RigidArea)
+>
+<!ELEMENT Alignment CDATA> 
+<!ELEMENT Foreground CDATA> 
+<!ELEMENT Background CDATA> 
+<!ELEMENT SwCtrl (Panel |SplitPane |TabbedPane |ScrollPane |ToolBar |InternalFrame |BasCtrl |DispCtrl | IactCtrl )>
+<!ELEMENT BasCtrl (Button |CheckBox | RadioButton| ToggleButton)> 
+<!ELEMENT DispCtrl (Label | ProgressBar)> 
+<!ELEMENT IactCtrl (TextField | PasswordField |FormattedField | TextArea |TextPane |EditorPane)> 
+<!ELEMENT TopCtrl (Frame | Dialog | Window |Applet)> 
+<!ELEMENT MedCtrl (PopupMenu | ColorChooser | FileChooser)> 
+
+

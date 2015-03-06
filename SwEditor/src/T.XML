@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+<Panel>
+	<Layout Type="Border"></Layout>	<SplitPane  Position="Center">
+	<Orientation>Vertical</Orientation>	<ContinuousLayout>true</ContinuousLayout>
+	<OneTouchExpandable></OneTouchExpandable>	<DividerLocation>150</DividerLocation>
+	<LeftComponent>						
+	<ScrollPane>		<SaveId>putHere</SaveId>			<Label>
+			<Icon>Resources/images/About.jpg</Icon>
+		</Label>		<Dimension>			<Height>100</Height>			<Width>240</Width>		</Dimension>
+	</ScrollPane>
+	</LeftComponent>	<RightComponent>
+	<Panel>
+	<Dimension>		<Height>100</Height>		<Width>240</Width>	</Dimension>
+	</Panel>	</RightComponent>
+	</SplitPane>
+</Panel></UIConfig>

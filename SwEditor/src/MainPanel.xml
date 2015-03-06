@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+    <Panel>
+		<Name>Demo</Name>
+		<PopupMenu>
+			<Name>tryPopup</Name>
+			<Label>Good Morning</Label>			<MenuItem>				<Text>First</Text>
+				<UserDef>USER01</UserDef>			</MenuItem>
+			<MenuItem>				<Text>Second</Text>				<UserDef>USER01</UserDef>			</MenuItem>
+			<MenuItem>				<Text>Third</Text>				<UserDef>USER01</UserDef>			</MenuItem>
+			<MenuItem>				<Text>Fourth</Text>				<UserDef>USER01</UserDef>			</MenuItem>
+			<MenuItem>				<Text>Fifth</Text>				<UserDef>USER01</UserDef>			</MenuItem>
+			<Separator/>
+			<MenuItem>				<UserDef>USER01</UserDef>				<Text>Last</Text>			</MenuItem>
+		</PopupMenu>		<Layout Type="Border"></Layout>
+		<Panel Position="West">
+			<Name>Mouse Test</Name>
+			<UserDef Action="tryPopup">CALLBK</UserDef>			<Layout Type="Box.Y_AXIS"></Layout>			<Border   Title="Ha Ha"> </Border>
+			<Box Style="RigidArea">
+				<Dimension>					<Height>40</Height>					<Width>10</Width>
+				</Dimension>			</Box>
+			<RadioButton Position="North">
+				<Name>start</Name>				<Icon>Resources/images/buttons/rb.gif</Icon>				<PressedIcon>Resources/images/buttons/rbp.gif</PressedIcon>
+				<RolloverIcon>Resources/images/buttons/rbr.gif</RolloverIcon>
+				<RolloverSelectedIcon>Resources/images/buttons/rbrs.gif</RolloverSelectedIcon>
+				<SelectedIcon>Resources/images/buttons/rbs.gif</SelectedIcon>
+				<Margin></Margin>			</RadioButton>			<Box Style="Vertical">
+				<Dimension>					<Height>100</Height>					<Width>10</Width>
+				</Dimension>			</Box>
+			<RadioButton Position="Center">
+				<Name>begin</Name>				<Text>Show</Text>				<Icon>Resources/images/buttons/rb.gif</Icon>				<PressedIcon>Resources/images/buttons/rbp.gif</PressedIcon>
+				<RolloverIcon>Resources/images/buttons/rbr.gif</RolloverIcon>
+				<RolloverSelectedIcon>Resources/images/buttons/rbrs.gif</RolloverSelectedIcon>
+				<SelectedIcon>Resources/images/buttons/rbs.gif</SelectedIcon>				<Margin></Margin>			</RadioButton>			<Box Style="VerticalGlue">
+			</Box>
+			<Label Position="South">				<Name>Wei</Name>				<Icon>Resources/images/imageClub/food/grapes.jpg</Icon>
+				<ToolTipText>This is grapes</ToolTipText>				<UserDef>USER01</UserDef>			</Label>		</Panel>
+		<Panel  Position="East">			<Border  Title="try me"></Border>
+			<Layout Type="Border"></Layout>			<Button  Position="North">
+				<Text>Hello</Text>			</Button>
+			<Button   Position="Center">
+				<Name>end</Name>
+				<UserDef>USER01</UserDef>				<Icon>Resources/images/buttons/b1.gif</Icon>				<PressedIcon>Resources/images/buttons/b1p.gif</PressedIcon>
+				<RolloverIcon>Resources/images/buttons/b1r.gif</RolloverIcon>
+				<DisabledIcon>Resources/images/buttons/b1d.gif</DisabledIcon>
+				<Margin></Margin>			</Button>
+			<CheckBox   Position="South">
+				<Name>try</Name>				<Icon>Resources/images/buttons/cb.gif</Icon>				<RolloverIcon>Resources/images/buttons/cbr.gif</RolloverIcon>
+				<RolloverSelectedIcon>Resources/images/buttons/cbrs.gif</RolloverSelectedIcon>
+				<SelectedIcon>Resources/images/buttons/cbs.gif</SelectedIcon>
+				<Margin></Margin>			</CheckBox>
+		</Panel>		<SplitPane Position="Center">
+			<ContinuousLayout>true</ContinuousLayout>
+			<OneTouchExpandable></OneTouchExpandable>			<DividerLocation>150</DividerLocation>
+			<RightComponent>
+				<TabbedPane XmlFile="tabbedpane.xml">				</TabbedPane>			</RightComponent>			<LeftComponent>
+				<ScrollPane XmlFile="treepane.xml">				</ScrollPane>			</LeftComponent>
+		</SplitPane>    </Panel>    
+</UIConfig>

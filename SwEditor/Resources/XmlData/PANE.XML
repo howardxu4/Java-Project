@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<Panel>
+		<TabbedPane>
+		<Tab Title="TextField">
+		<Panel>
+		<Layout Type="Border"/>		<Panel Position="North">
+		<Border Type="20"/>
+		<Layout Type="Grid" Col="2"/>
+			<Label>			<Text>Text : </Text>			</Label>			<TextField>			<Columns>10</Columns>			</TextField>
+			<Label>			<Text>Columns : </Text>			</Label> 			<Spiner>
+ 				<Name>spiner</Name>
+ 				<Dimension Size="Maximum">
+ 					<Height>12</Height>
+ 					<Width>40</Width> 				</Dimension>
+ 			</Spiner>
+			<Label>			<Text>Editable : </Text>			</Label>			<CheckBox>			<Name>Editable</Name>			</CheckBox>
+			<Label>			<Text>Foreground : </Text>			</Label>			<Button>			<Name>Foreground</Name>			</Button>
+			<Label>			<Text>Background : </Text>			</Label>			<Button>			<Name>Background</Name>			</Button>
+			<Label>			<Text>Dimension : </Text>			</Label>			<TextField>			<Columns>10</Columns>			</TextField>
+			<Label>			<Text>Visible : </Text>			</Label>			<CheckBox>			<Name>Visible</Name>			</CheckBox>
+		</Panel>		<Panel Position="Center">
+		<Border Type="10"/>		</Panel>		</Panel>
+		</Tab>		<Tab Title="General">		<Panel>		<Layout Type="Border"/>		<Border Type="20"/>
+		<Panel Position="North">
+		<Layout Type="Grid" Col="2"/>
+			<Label>			<Text>Name : </Text>			</Label>			<TextField>			<Columns>10</Columns>			</TextField>
+			<Label>			<Text>SaveId : </Text>			</Label>			<TextField>			<Columns>10</Columns>			</TextField>
+			<Label>			<Text>UserDef : </Text>			</Label>			<TextField>			<Columns>10</Columns>			</TextField>		</Panel>		<Panel Position="Center">
+		<Layout Type="Border"/>		<ComboBox Position="North">
+ 			<Name>Layout</Name> 			<Editable/>
+			<Item>Border</Item>			<Item>Box.X_AXIS</Item>			<Item>Box.Y_AXIS</Item>			<Item>Grid</Item>		</ComboBox>
+		<Panel Position="Center">
+		<Border Type="Etched"/>
+		</Panel>		</Panel>		</Panel>		</Tab>		</TabbedPane>
+	</Panel></UIConfig>

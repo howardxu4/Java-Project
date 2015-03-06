@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="myTabbedPaneDemo">
+   <Panel>
+      <Border Type="Etched"></Border>
+      <Name>TabbedPaneDemo</Name>
+      <SaveId>myTabbedPaneDemo</SaveId>
+      <Dimension Size="Preferred">
+         <Width>650</Width>
+         <Height>540</Height>
+      </Dimension>
+      <LayOut Type="Border"></LayOut>
+      <Panel Position="North">
+         <Border Type="4"></Border>
+         <Label>
+            <Text>Tab Placement: </Text>
+         </Label>
+         <Box Style="RigidArea">
+            <Dimension>
+               <Height>1</Height>
+               <Width>10</Width>
+            </Dimension>
+         </Box>
+         <RadioButton>
+            <Text>Top</Text>
+            <Selected>true</Selected>
+            <UserDef>USER04</UserDef>
+         </RadioButton>
+         <RadioButton>
+            <Text>Left</Text>
+            <UserDef>USER04</UserDef>
+         </RadioButton>
+         <RadioButton>
+            <Text>Bottom</Text>
+            <UserDef>USER04</UserDef>
+         </RadioButton>
+         <RadioButton>
+            <Text>Right</Text>
+            <UserDef>USER04</UserDef>
+         </RadioButton>
+      </Panel>
+      <TabbedPane Position="Center">
+         <SaveId>chgTabbedPane</SaveId>
+         <Name>TabDemo</Name>
+         <UserDef>USER04</UserDef>
+         <Tab Title="laine">
+            <Panel>
+               <Border Type="20"></Border>
+            <Label>
+               <Icon>/resources/images/tabbedpane/laine.jpg</Icon>
+               <Dimension Size="Minimum">
+                  <Height>20</Height>
+                  <Width>20</Width>
+               </Dimension>
+            </Label>
+            </Panel>
+         </Tab>
+         <Tab title="ewan">
+            <Panel>
+               <Border Type="40"></Border>
+               <Label>
+                  <Icon>resources/images/tabbedpane/ewan.jpg</Icon>
+                  <Dimension Size="Minimum">
+                     <Height>20</Height>
+                     <Width>20</Width>
+                  </Dimension>
+               </Label>
+            </Panel>
+         </Tab>
+         <Tab Title="hania">
+            <Panel>
+               <Border Type="40"></Border>
+               <Label>
+               <Icon>resources/images/tabbedpane/hania.jpg</Icon>
+               <Dimension Size="Minimum">
+                  <Height>20</Height>
+                  <Width>20</Width>
+               </Dimension>
+            </Label>
+         </Panel>
+         </Tab>
+         <Tab Title="bouncing Babies!">
+            <Panel>
+            <SaveId>HeadSpinPanel</SaveId>
+            <Border Type="40"></Border>
+            <Background>0</Background>
+            <Label>
+               <SaveId>img0</SaveId>
+               <Icon>resources/images/tabbedpane/david.gif</Icon>
+            </Label>
+             <Label>
+               <SaveId>img1</SaveId>
+               <Icon>resources/images/tabbedpane/matthew.gif</Icon>
+            </Label>
+             <Label>
+               <SaveId>img2</SaveId>
+               <Icon>resources/images/tabbedpane/stephen.gif</Icon>
+            </Label>
+             <Label>
+               <SaveId>img3</SaveId>
+               <Icon>resources/images/tabbedpane/blake.gif</Icon>
+            </Label>
+             <Label>
+               <Visible/>
+               <SaveId>img4</SaveId>
+               <Icon>resources/images/tabbedpane/brooke.gif</Icon>
+            </Label>
+            <Label>
+               <Visible/>
+               <SaveId>img5</SaveId>
+               <Icon>resources/images/tabbedpane/ewan.gif</Icon>
+            </Label>
+         </Panel>
+          </Tab>
+       </TabbedPane>
+   </Panel>
+</UIConfig>

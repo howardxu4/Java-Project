@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig Load="TreeViewer"><ScrollPane><Dimension><Height>300</Height><Width>300</Width></Dimension><Tree><Name>myTest</Name><UserDef>USER05</UserDef><Root>World
+         <Node>USA
+            <Node>California
+               <Node>San Jose</Node><Node>Cupertino</Node></Node><Node>Michigan
+               <Node>Ann Arbor</Node></Node></Node><Node>Germany
+            <Node>Schleswig-Holstein
+               <Node>Kiel</Node><Node>Berlin</Node></Node></Node></Root></Tree></ScrollPane></UIConfig>

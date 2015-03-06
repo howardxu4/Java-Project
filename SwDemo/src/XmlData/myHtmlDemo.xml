@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+   <Panel>
+      <SaveId>myHtmlDemo</SaveId>
+      <Layout Type="Border"></Layout>
+      <ScrollPane  Position="Center">
+         <Dimension Size="Preferred">
+            <Height>400</Height>
+            <Width>600</Width>
+         </Dimension>
+         <EditorPane>
+            <Name>txtPane</Name>
+            <Page>resources/index.html</Page>
+            <Editable>No</Editable>
+         </EditorPane>
+      </ScrollPane>
+   </Panel>
+</UIConfig>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>	<ScrollPane>	<Panel>	<Layout>Border</Layout>
+	<Dimension>
+		<Height>200</Height>
+		<Width>100</Width>
+	</Dimension>
+	<Panel Position="North">		<Layout Type="Grid" Col="2"/>
+		<Label>
+		<Border Type="Raised"/>		<Alignment>Right</Alignment>		<Text>First</Text>		</Label>
+		<TextField>		<Text>Value1</Text>
+		<Columns>5</Columns>		<Dimension>
+			<Height>10</Height>
+			<Width>40</Width>
+		</Dimension>		</TextField>
+		<Label>		<Text>Second</Text>		<Border Type="Etched"/>		</Label>
+		<TextField>		<Text>Value2</Text>		<Columns>5</Columns>		<Dimension>
+			<Height>10</Height>
+			<Width>40</Width>
+		</Dimension>		</TextField>
+		<Label><Text>Third</Text>		<Border Type="Lowered"/>		</Label>
+		<ComboBox>		<Dimension>
+			<Height>10</Height>
+			<Width>40</Width>
+		</Dimension>		<Text>Value3</Text>
+		<Editable/>		<Item>this</Item>		<Item>haha</Item>		<Item>That</Item>		<Item>hehe</Item>		</ComboBox>
+		<Label><Text>Last</Text>		<Border Type="Line"/>		<Background>-1</Background>		</Label>
+		<CheckBox>		<Border Type="Line"/>		<Dimension>
+			<Height>10</Height>
+			<Width>40</Width>
+		</Dimension>		</CheckBox>
+		<TextField><Text>Continue</Text>		<Editable>false</Editable>
+		<Background>-1</Background>		</TextField>
+		<TextField><Text></Text>
+		<Columns>5</Columns>		</TextField>
+		<TextField><Text>End</Text>		<Editable>false</Editable>
+		<Background>-1</Background>		</TextField>
+		<Box Style="Horizontal">
+		<SaveId>thisPanel</SaveId>		<CheckBox  Position="Center">		<Background>-1</Background>		<Dimension>
+			<Height>10</Height>
+			<Width>40</Width>
+		</Dimension>
+		<UserDef Action="_SYSTEM">System			<Object>_this</Object>
+			<Method>setVisible</Method>
+			<parType>_boolean</parType>
+			<parValue>_value</parValue>		</UserDef>
+		</CheckBox>		<ComboBox>		<SaveId>thisCombo</SaveId>		<Visible/>
+		<Dimension>
+			<Height>10</Height>
+			<Width>40</Width>
+		</Dimension>		<Text>Value3</Text>
+		<Editable/>		<Item>this</Item>		<Item>haha</Item>		<Item>That</Item>		<Item>hehe</Item>		</ComboBox>				</Box>
+	</Panel>	<Box Position="Center" Style="40"/>
+	</Panel>	</ScrollPane>
+</UIConfig>
